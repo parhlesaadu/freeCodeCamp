@@ -33,8 +33,8 @@ def vigenere(message, key, direction=1):
             key_index += 1
 
             # Define the offset and the encrypted/decrypted letter
-            offset = alphabet.index(key_char)
-            index = alphabet.find(char)
+            offset = alphabet.index(key_char) # used to find single char in string, or single entry in arr. raises error if not found
+            index = alphabet.find(char) # can be used to find substrings. returns -1 if not found
             new_index = (index + offset*direction) % len(alphabet)
             final_message += alphabet[new_index]
     

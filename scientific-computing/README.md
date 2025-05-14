@@ -1,7 +1,7 @@
 # Scientific Computing with Python
 
 ## Ciphers
-### Caesar Cipher
+### [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher)
 The Caesar cipher is the plain alphabet rotated left or right by some number of positions. For instance, here is a Caesar cipher using a left rotation of three places, equivalent to a right shift of 23 (the shift parameter is used as the key):
 
 ```
@@ -16,7 +16,7 @@ When encrypting, a person looks up each letter of the message in the "plain" lin
 ```
 Deciphering is done in reverse, with a right shift of 3.
 
-### Vigenère Cipher
+### [Vigenère Cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher)
 The Vigenère cipher (French pronunciation: [viʒnɛːʁ]) is a method of encrypting alphabetic text where each letter of the plaintext is encoded with a different Caesar cipher, whose increment is determined by the corresponding letter of another text, the key.
 
 For example, if the plaintext is attacking tonight and the key is oculorhinolaryngology, then

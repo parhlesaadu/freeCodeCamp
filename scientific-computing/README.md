@@ -27,7 +27,7 @@ For example, if the plaintext is attacking tonight and the key is oculorhinolary
 
 It is important to note that traditionally spaces and punctuation are removed prior to encryption and reintroduced afterwards.
 
-In this example the tenth letter of the plaintext t is shifted by 14 positions (because the tenth letter of the key o is the 14th letter of the alphabet, counting from zero.) Therefore, the encryption yields the message ovnlqbpvt hznzeuz.
+In this example the tenth letter of the plaintext ```t``` is shifted by 14 positions (because the tenth letter of the key ```o``` is the 14th letter of the alphabet, counting from zero.) Therefore, the encryption yields the message ```ovnlqbpvt hznzeuz```.
 If the recipient of the message knows the key, they can recover the plaintext by reversing this process. The Vigenère cipher is therefore a special case of a polyalphabetic substitution.
 
 

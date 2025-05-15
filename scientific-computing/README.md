@@ -19,7 +19,7 @@ Deciphering is done in reverse, with a right shift of 3.
 ### [Vigenère Cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher)
 The Vigenère cipher (French pronunciation: [viʒnɛːʁ]) is a method of encrypting alphabetic text where each letter of the plaintext is encoded with a different Caesar cipher, whose increment is determined by the corresponding letter of another text, the key.
 
-For example, if the plaintext is attacking tonight and the key is oculorhinolaryngology, then
+For example, if the plaintext is ```attacking tonight``` and the key is ```oculorhinolaryngology```, then
 
 - the first letter of the plaintext, ```a```, is shifted by 14 positions in the alphabet (because the first letter of the key, ```o```, is the 14th letter of the alphabet, counting from zero), yielding ```o```;
 - the second letter, ```t```, is shifted by 2 (because the second letter of the key, ```c```, is the 2nd letter of the alphabet, counting from zero) yielding ```v```;

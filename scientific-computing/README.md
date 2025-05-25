@@ -36,3 +36,9 @@ The Luhn algorithm is as follows:
 - From the right to left, double the value of every second digit; if the product is greater than 9, sum the digits of the products.
 - Take the sum of all the digits.
 - If the sum of all the digits is a multiple of 10, then the number is valid; else it is not valid.
+
+## List & Lambda Functions
+- list.insert(index, element)
+- list.pop(index - last by default)
+- Escape the quote by prepending a backlash to it: 'I\'m a string!' or use double quotes to define the string: "I'm a string!" (preferred).
+- Read more about maps [here](https://www.w3schools.com/python/ref_func_map.asp).

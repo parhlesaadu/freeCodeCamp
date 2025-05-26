@@ -1,14 +1,14 @@
-def add_expense(expenses, amount, category):    # void
+def add_expense(expenses, amount, category):    # void (list, dec, str)
     expenses.append({'amount': amount, 'category': category})
     
-def print_expenses(expenses):    # void
+def print_expenses(expenses):    # void (list)
     for expense in expenses:
         print(f'Amount: {expense["amount"]}, Category: {expense["category"]}')
     
-def total_expenses(expenses):    # int
+def total_expenses(expenses):    # int (list)
     return sum(map(lambda expense: expense['amount'], expenses))
     
-def filter_expenses_by_category(expenses, category):    # list
+def filter_expenses_by_category(expenses, category):    # list (list, str)
     return filter(lambda expense: expense['category'] == category, expenses)
 
 def main():

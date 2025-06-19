@@ -18,14 +18,13 @@ def caesar(message, key):
 caesar(text, shift)
 
 def vigenere(message, key, direction=1):
-    # For more info on this cypher: https://chatgpt.com/c/6814deea-bfd0-800a-890f-91eb199f52b9
     key_index = 0
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     final_message = ''
 
     for char in message.lower():
-        # Append any non-letter character to the message
         if not char.isalpha():
+            # Append any non-letter character to the message
             final_message += char
         else:        
             # Find the right key character to encode/decode

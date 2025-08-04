@@ -42,3 +42,11 @@ The Luhn algorithm is as follows:
 - list.pop(index - last by default)
 - Escape the quote by prepending a backlash to it: 'I\\'m a string!' or use double quotes to define the string: "I'm a string!" (preferred).
 - Read more about [maps](https://www.w3schools.com/python/ref_func_map.asp) and [filters](https://www.w3schools.com/python/ref_func_filter.asp).
+
+## Case Converter
+-  PascalCasedString
+-  camelCasedString
+-  snake_cased_string
+-  Ternary operator: ```value_if_true if condition else value_if_false```
+-  'separator_str'.join(iterable_of_strings)
+-  

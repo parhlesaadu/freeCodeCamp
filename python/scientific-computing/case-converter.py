@@ -16,3 +16,18 @@ def convert_to_snake_case(pascal_or_camel_cased_string):
 def convert_to_snake_case_list_comprehension(pascal_or_camel_cased_string):
     snake_cased_char_list = ['_' + char.lower() if char.isupper() else char for char in pascal_or_camel_cased_string]    # if no else clause, if statement goes after 'for x in y'
     return ''.join(snake_cased_char_list).strip('_')
+
+#    self-written algorithm
+def convertToPascalOrCamelCase(snake_cased_str, Pascal=True):
+    if Pascal:
+        snake_cased_str = '_' + snake_cased_str
+    lis = []
+    for char in snake_cased_str:
+        if not lis:    # list is empty
+            lis.append(char)
+        elif lis[-1] == '_':    # last char is underscore
+            lis.pop()
+            lis.append(char.upper())
+        else:
+            lis.append(char)
+    return ''.join(lis)

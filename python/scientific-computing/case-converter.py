@@ -19,7 +19,7 @@ def convert_to_snake_case_list_comprehension(pascal_or_camel_cased_string):
 
 #    self-written algorithm
 def convertToPascalOrCamelCase(snake_cased_str, Pascal=True):
-    if Pascal:
+    if Pascal:    # first letter to be capitalised
         snake_cased_str = '_' + snake_cased_str
     lis = []
     for char in snake_cased_str:

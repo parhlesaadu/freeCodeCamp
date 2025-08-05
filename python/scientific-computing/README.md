@@ -44,7 +44,7 @@ The Luhn algorithm is as follows:
 - Read more about [maps](https://www.w3schools.com/python/ref_func_map.asp) and [filters](https://www.w3schools.com/python/ref_func_filter.asp).
 
 ## Case Converter
-###  Case types"
+###  Case types:
 -  PascalCasedString
 -  camelCasedString
 -  snake_cased_string

@@ -44,7 +44,13 @@ The Luhn algorithm is as follows:
 - Read more about [maps](https://www.w3schools.com/python/ref_func_map.asp) and [filters](https://www.w3schools.com/python/ref_func_filter.asp).
 
 ## Case Converter
+###  Case types"
 -  PascalCasedString
 -  camelCasedString
 -  snake_cased_string
--  Ternary operator: ```value_if_true if condition else value_if_false```
+###  Ternary operator:
+-  ```value_if_true if condition else value_if_false```
+### Algorithm for conversion to snake case:
+-  Start with an empty list
+-  Process (convert 'uppercase' to '_lowercase') and append each char from the input string to the list
+-  Join all list items into a single string: ```'separator_str'.join(iterable_of_strings)```

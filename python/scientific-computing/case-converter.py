@@ -23,11 +23,10 @@ def convertToPascalOrCamelCase(snake_cased_str, Pascal=True):
         snake_cased_str = '_' + snake_cased_str
     lis = []
     for char in snake_cased_str:
-        if not lis:    # list is empty
+        if not lis or lis[-1] != '_':    # list is empty (lis[-1] would raise error) or last char is NOT underscore
             lis.append(char)
-        elif lis[-1] == '_':    # last char is underscore
+        else:    # last char is underscore
             lis.pop()
             lis.append(char.upper())
-        else:
-            lis.append(char)
+    
     return ''.join(lis)

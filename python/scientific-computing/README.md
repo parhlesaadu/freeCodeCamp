@@ -48,5 +48,3 @@ The Luhn algorithm is as follows:
 -  camelCasedString
 -  snake_cased_string
 -  Ternary operator: ```value_if_true if condition else value_if_false```
--  'separator_str'.join(iterable_of_strings)
--  

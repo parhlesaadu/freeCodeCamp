@@ -57,5 +57,5 @@ The Luhn algorithm is as follows:
 ### Algorithm for conversion from snake_case:
 -  If converting to PascalCase, prepend an underscore (to capitalise starting char); skip if converting to camelCase.
 -  Start with an empty list.
--  Process (if previous char is an underscore, pop it and capitalise current char) and append each char from the input string to the list.
+-  Process (if previous char is '_', pop it and capitalise current char) and append each char from the input string to the list.
 -  Join all list items into a single string: ```'separator_str'.join(iterable_of_strings)```

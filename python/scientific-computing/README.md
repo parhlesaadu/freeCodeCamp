@@ -50,7 +50,12 @@ The Luhn algorithm is as follows:
 -  snake_cased_string
 ###  Ternary operator:
 -  ```value_if_true if condition else value_if_false```
-### Algorithm for conversion to snake case:
--  Start with an empty list
--  Process (convert 'uppercase' to '_lowercase') and append each char from the input string to the list
+### Algorithm for conversion to snake_case:
+-  Start with an empty list.
+-  Process (convert 'uppercase' to '_lowercase') and append each char from the input string to the list.
+-  Join all list items into a single string: ```'separator_str'.join(iterable_of_strings)```
+### Algorithm for conversion from snake_case:
+-  If converting to PascalCase, prepend an underscore (to capitalise starting char); skip if converting to camelCase.
+-  Start with an empty list.
+-  Process (if previous char is an underscore, pop it and capitalise current char) and append each char from the input string to the list.
 -  Join all list items into a single string: ```'separator_str'.join(iterable_of_strings)```

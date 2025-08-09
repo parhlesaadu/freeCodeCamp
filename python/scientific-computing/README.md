@@ -64,3 +64,5 @@ The Luhn algorithm is as follows:
 - ```square_target```: The number for which you want to find the square root.
 - ```tolerance``` (optional): The acceptable difference between the square of the approximate root value and the actual target value (default is 1e-7). The tolerance 1e-7 implies that the solution will be accurate to within 0.0000001 of the true value and is a good default choice that balances accuracy and performance.
 - ```max_iterations``` (optional): The maximum number of iterations to perform (default is 100). If the method doesn't converge within this limit, you'll assume the solution is not found.
+
+In Python, the ```is``` keyword checks for object identity. It's used to determine if two variables point to the same object in memory. In contrast to is, the equality operator ```==``` determines if the values of two objects are the same, regardless of whether they are the same object in memory.

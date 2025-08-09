@@ -59,3 +59,8 @@ The Luhn algorithm is as follows:
 -  Start with an empty list.
 -  Process (if previous char is '_', pop it and capitalise current char) and append each char from the input string to the list.
 -  Join all list items into a single string: ```'separator_str'.join(iterable_of_strings)```
+
+## Bisection Method
+- ```square_target```: The number for which you want to find the square root.
+- ```tolerance``` (optional): The acceptable difference between the square of the approximate root value and the actual target value (default is 1e-7). The tolerance 1e-7 implies that the solution will be accurate to within 0.0000001 of the true value and is a good default choice that balances accuracy and performance.
+- ```max_iterations``` (optional): The maximum number of iterations to perform (default is 100). If the method doesn't converge within this limit, you'll assume the solution is not found.

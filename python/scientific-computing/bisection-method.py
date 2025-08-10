@@ -14,11 +14,10 @@ def square_root_bisection(square_target, tolerance=1e-7, max_iterations=100):
         
         for _ in range(max_iterations):
             mid = (low + high) / 2
-            square_mid = mid**2
 
-            if abs(square_mid - square_target) < tolerance:  # approximate root found within tolerance range
+            if abs(mid ** 2 - square_target) < tolerance:  # approximate root found within tolerance range
                 root = mid; break
-            elif square_mid < square_target:  # current approximation is less than target
+            elif mid ** 2 < square_target:  # current approximation is less than target
                 low = mid
             else:  # current approximation is greater than target
                 high = mid

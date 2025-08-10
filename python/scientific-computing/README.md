@@ -64,5 +64,15 @@ The Luhn algorithm is as follows:
 - ```square_target```: The number for which you want to find the square root.
 - ```tolerance``` (optional): The acceptable difference between the square of the approximate root value and the actual target value (default is 1e-7). The tolerance 1e-7 implies that the solution will be accurate to within 0.0000001 of the true value and is a good default choice that balances accuracy and performance.
 - ```max_iterations``` (optional): The maximum number of iterations to perform (default is 100). If the method doesn't converge within this limit, you'll assume the solution is not found.
+### Bisection Algorithm for Square Root
+- If ```square_target``` <= 0 or == 1, treat accordingly and skip the following steps.
+- Set ```low``` to 0 and ```high``` to the higher of 1 and ```square-target```. 
+- Repeat ```max-iterations``` times:
+  - Store the mean of ```low``` and ```high``` as ```mid```.
+  - If the difference between ```square_target``` and the square of ```mid``` is within the ```tolerance``` range, return ```mid``` as the approximate root.
+  - Else if ```square_target``` is greater than the square of ```mid```, set the value of ```low``` to that of mid.
+  - Else (if ```square_target``` is lower than the square of ```mid```), set the value of high to that of ```mid```.
+- Terminate the program if no root is found within ```max-iterations``` iterations.
 
+### Appendix
 In Python, the ```is``` keyword checks for object identity. It's used to determine if two variables point to the same object in memory. In contrast to is, the equality operator ```==``` determines if the values of two objects are the same, regardless of whether they are the same object in memory.

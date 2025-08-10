@@ -66,7 +66,10 @@ The Luhn algorithm is as follows:
 - ```max_iterations``` (optional): The maximum number of iterations to perform (default is 100). If the method doesn't converge within this limit, you'll assume the solution is not found.
 ### Bisection Algorithm for Square Root
 - If ```square_target``` <= 0 or == 1, treat accordingly and skip the following steps.
-- Set ```low``` to 0 and ```high``` to the higher of 1 and ```square-target```. 
+  - Negative numbers cannot have a root, while 0 and 1 are their own roots.
+- Set ```low``` to 0 and ```high``` to the higher of 1 and ```square_target```. The logic behind this bisection is that:
+  - If ```square_target``` is greater than 1, its root lies between 0 and itself.
+  - If ```square_target``` lies between 0 and 1, its root lies between itself and 1, but we keep 0 as the lower limit to achieve more accurate results in fewer iterations.
 - Repeat ```max-iterations``` times:
   - Store the mean of ```low``` and ```high``` as ```mid```.
   - If the difference between ```square_target``` and the square of ```mid``` is within the ```tolerance``` range, return ```mid``` as the approximate root.

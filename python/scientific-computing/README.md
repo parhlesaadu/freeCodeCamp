@@ -70,7 +70,7 @@ The Luhn algorithm is as follows:
 - Repeat ```max-iterations``` times:
   - Store the mean of ```low``` and ```high``` as ```mid```.
   - If the difference between ```square_target``` and the square of ```mid``` is within the ```tolerance``` range, return ```mid``` as the approximate root.
-  - Else if ```square_target``` is greater than the square of ```mid```, set the value of ```low``` to that of mid.
+  - Else if ```square_target``` is greater than the square of ```mid```, set the value of ```low``` to that of ```mid```.
   - Else (if ```square_target``` is lower than the square of ```mid```), set the value of high to that of ```mid```.
 - Terminate the program if no root is found within ```max-iterations``` iterations.
 
